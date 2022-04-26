@@ -60,6 +60,17 @@ const colors = ["Rouge", "Bleu"];
 
 for (const n of vehicles) {
   for (const m of colors) {
-    console.log(n, m);
+    // console.log(n, m);
   }
+}
+
+//suite de fibo
+twoBefore = 0;
+oneBefore = 1;
+
+for (let i = 0; i < 10; i++) {
+  current = twoBefore + oneBefore;
+  console.log(current);
+  twoBefore = oneBefore;
+  oneBefore = current;
 }
