@@ -39,8 +39,8 @@ const result = 70;
 // avec boucle for
 for (let i = 0; i < sortedPerf.length; i++) {
   if (result === sortedPerf[i]) {
-    console.log("boucle for");
-    console.log(i);
+    // console.log("boucle for");
+    // console.log(i);
   }
 }
 
@@ -48,8 +48,18 @@ for (let i = 0; i < sortedPerf.length; i++) {
 let i = 0;
 while (i < sortedPerf.length && sortedPerf[i] <= result) {
   if (sortedPerf[i] === result) {
-    console.log("boucle while");
-    console.log(i);
+    // console.log("boucle while");
+    // console.log(i);
   }
   i = i + 1;
+}
+
+//le produit cartésien
+const vehicles = ["Vélo", "Trottinette", "Roller"];
+const colors = ["Rouge", "Bleu"];
+
+for (const n of vehicles) {
+  for (const m of colors) {
+    console.log(n, m);
+  }
 }
