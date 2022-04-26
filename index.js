@@ -28,6 +28,28 @@ const val = "Broom broom"; // La valeur à trouver
 
 for (let i = 0; i < teams.length; i++) {
   if (val === teams[i]) {
+    // console.log(i);
+  }
+}
+
+//recherche des une liste triée
+const sortedPerf = [0, 6, 7, 16, 25, 30, 32, 38, 46, 46, 59, 70, 87, 93, 111];
+const result = 70;
+
+// avec boucle for
+for (let i = 0; i < sortedPerf.length; i++) {
+  if (result === sortedPerf[i]) {
+    console.log("boucle for");
     console.log(i);
   }
+}
+
+// avec une boucle while
+let i = 0;
+while (i < sortedPerf.length && sortedPerf[i] <= result) {
+  if (sortedPerf[i] === result) {
+    console.log("boucle while");
+    console.log(i);
+  }
+  i = i + 1;
 }
